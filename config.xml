@@ -6,6 +6,8 @@
 
 <name>Astypalaia App v0.1</name>
 
+<icon src="icon.png" />
+
 <description>
 A simple app for Astypalaia Island Greece.
 </description>
