@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>jQuery Mobile Web App</title>
+<title>Astypalaia App</title>
 <link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
@@ -10,57 +10,70 @@
 </head> 
 <body> 
 
-<div id="page" data-role="page" data-theme="b">
-	<div data-role="header">
-		<h1>Page OneONE</h1>
+<div data-role="page" id="home" data-theme="c">
+
+	<!-- ************** header ************** -->	
+    <div data-role="header"  data-add-back-btn="true" >
+        <div class="logo">
+        <img src="images/header-logo-1-9.png" 
+        alt="Astypalaia INFO logo, hotels, rooms, rent car">
+        </div>
+    </div> 
+<!-- ************** header end ********* -->	
+ 
+
+	<div data-role="content">
+	
+	<div class="mainPhoto" >
+    <img style="width:90%" src="images/logo3.jpg"> 
+    </div>
+	
+	<div class="choice_list"> 
+	
+	<ul data-role="listview" data-inset="true" id="main-menu" >
+	<li>
+    <a href="astypalaia-accommodation.php" data-transition="slidedown"> 
+    <img src="images/hotels-rooms.png"/> 
+    <h3>Accommodation</h3>
+    </a></li>
+	
+    <li>
+    <a href="astypalaia-eat-drink.php"  data-transition="slidedown"> 
+    <img src="images/restaurants.png"/> 
+    <h3>Eat &amp; Drink</h3>
+    </a></li>
+    
+	<li>
+    <a href="astypalaia-shopping.php"  data-transition="slidedown"> 
+    <img src="images/rent-car.png"/> 
+    <h3>Shops &amp; Services</h3>
+    </a></li>
+	
+    <li>
+    <a href="astypalaia-under-construction.php"  data-transition="slidedown"> 
+    <img src="images/island.png"/> 
+    <h3>The Island</h3>
+    </a></li>
+	
+    <li>
+    <a href="astypalaia-under-construction.php"  data-transition="slidedown"> 
+    <img src="images/photos.png"/> 
+    <h3>Events &amp; Photos</h3>
+    </a></li>
+
+    <li>
+    <a href="http://www.astypalaia.info" target="_blank" rel="external"  data-transition="slidedown"> 
+    <img src="images/fullSite.png"/> 
+    <h3>Full site</h3>
+    </a></li>
+   
+	</ul>	
+	
 	</div>
-	<div data-role="content">	
-		<ul data-role="listview">
-			<li><a href="#page2">Page Two</a></li>
-            <li><a href="#page3">Page Three</a></li>
-			<li><a href="#page4">Page Four</a></li>
-		</ul>		
 	</div>
-	<div data-role="footer">
-		<h4>Page FooterPanos</h4>
-	</div>
+
 </div>
 
-<div id="page2" data-role="page" data-theme="e">
-	<div data-role="header">
-		<h1>Page Two</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
-</div>
-
-<div data-role="page" id="page3">
-	<div data-role="header">
-		<h1>Page Three</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
-</div>
-
-<div data-role="page" id="page4">
-	<div data-role="header">
-		<h1>Page Four</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
-</div>
 
 </body>
 </html>
